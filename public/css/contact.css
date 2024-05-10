@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h2 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h3 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 40px;
+}
+
+body {
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+    background: #436ED2;
+}
+
+#header h1 {
+    font-size: 30px;
+   
+}
+
+#header h1 a {
+    text-decoration: none;
+    color: #FDE2F9;
+}
+
+#header .search-bar {
+    padding-right: 20%;
+}
+
+#header .search-bar input {
+    padding: 10px;
+    padding-right: 180px;
+    border: none;
+}
+
+#header .search-bar button {
+    padding: 10px;
+}
+
+#header .username {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#header .username a {
+    text-decoration: none;
+    color: #FDE2F9;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px ;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FDE2F9 ;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: white;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+#sub-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: white;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+}
+
+
+#subnavbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#subnavbar li {
+    list-style: none;
+    padding: 0 20px ;
+    position: relative;
+}
+
+#subnavbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a ;
+    transition: 0.3s ease;
+}
+
+#subnavbar li a:hover,
+#subnavbar li a.active {
+    color: #436ED2;
+}
+
+#subnavbar li a.active::after,
+#subnavbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #436ED2;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+.account-type{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.category label {
+    display: flex;
+    align-items: center;
+
+}
+
+.dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+
+}
+
+#dot-1:checked ~ .category .one{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+#dot-2:checked ~ .category .two{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    
+}
+
+
+.contacts {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+
+form {
+    width: 600px;
+    text-align: center;
+}
+.input-field {
+    width: 48.5%;
+}
+
+.input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid black;
+    font-size: 16px;
+    color: black;
+    margin: 12px 0;
+}
+
+.item::placeholder {
+    color: black;
+}
+
+.error-txt {
+    font-size: 14.5px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.textarea-field .error-txt {
+    margin-top: -10px;
+}
+
+.textarea-field .item{
+    resize: none;
+}
+
+button {
+    padding: 12px 32px;
+    border: 1px solid black;
+    background: white;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px lightblue ;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    margin: 10px;
+}
+
+.send {
+    background-color: lightblue;
+}
+
+button:hover {
+    box-shadow: none;
+}
+

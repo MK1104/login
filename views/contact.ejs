@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/contact.css ">
+</head>
+<body>
+    <section id="header">
+        <h1><a href="#">ShopMee</a></h1>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="Mainpage.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+
+        <div class="username">
+            <li id="user_name"><a href="#" id="login" class="hid">Log in | Sign up</a></li>
+
+        </div>
+    </section>
+
+    <section id="sub-header">
+        <a href="#"><img src="img/logo (1).png" class="logo" alt=""></a>
+        <div>
+            <ul id="subnavbar">
+                <li><a class="active" href="home_page.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <h2 class="contacts">Contact ShopMee</h2>
+    <section class="contact">
+        
+
+        <div>
+            <form action="https://api.web3forms.com/submit" method="post">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Full name" id="name" class="item" autocomplete="off">
+                        <input type="hidden" name="access_key" value="2b52772b-0cf3-4b74-93af-0affd430832a">
+                        <div class="error-txt">Full Name can't be blank</div>
+    
+                    </div>
+                    <div class="input-field field">
+                        <input type="email" placeholder="Email" id="Email" class="item" autocomplete="off">
+
+                        <div class="error-txt">Email can't be blank</div>
+                    </div>
+    
+                </div>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="number" placeholder="Phone number" id="Phone" class="item" autocomplete="off">
+                        <div class="error-txt">Phone can't be blank</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Purpose of contact" id="Purpose" class="item" autocomplete="off">
+                        <div class="error-txt">Purpose of contact can't be blank</div>
+                    </div>
+    
+                </div>
+    
+                <div class="textarea-field field">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your message" class="item" autocomplete="off"></textarea>
+                    <div class="error-txt">Message can't be blank</div>
+                </div>
+                
+                <div class="account-type">
+                    <input type="radio" name="account" id="dot-1">
+                    <input type="radio" name="account" id="dot-2">
+                    <span class="account-type">Contact method</span>
+                    <span></span>
+                    <div class="category" name="Account">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="Account">Phone</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="Account">Email</span>
+                        </label>
+                    </div>
+                </div>
+    
+                <button type="submit">Clear</button>
+                <button type="reset" class="send">Send</button>
+    
+    
+    
+                
+            </form> 
+        </div>
+    </section>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

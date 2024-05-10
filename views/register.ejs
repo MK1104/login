@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="/v1/auth/register" method="post">
+            <div class="user-details">
+                <div class="input-box">
+                    <label for="username">
+                        <span class="details">Username</span>
+                        <input type="text"  name="username" id="username" value="<%= typeof username != 'undefined' ? username : ''%>">
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">
+                        <span class="details">Email</span>
+                        <input type="email"  name="email" id="email" value="<%= typeof email != 'undefined' ? email : ''%>">
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="phonenumber">
+                        <span class="details">Phone number</span>
+                        <input type="number"  name="phonenumber" id="phonenumber" value="<%= typeof phonenumber != 'undefined' ? phonenumber : ''%>">
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="password">
+                        <span class="details">Password</span>
+                        <input type="password"  name="password" id="password" value="<%= typeof password != 'undefined' ? password : ''%>">
+                    </label>
+                </div>
+
+                <!-- <div class="input-box">
+                    <span class="details">Retype password</span>
+                    <input type="password" placeholder="Retype your password" required>
+                </div> -->
+                <div class="input-box">
+                    <label for="firstname">
+                        <span class="details">First name</span>
+                        <input type="text"  name="firstname" id="firstname" value="<%= typeof firstname != 'undefined' ? firstname : ''%>">
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="lastname">
+                        <span class="details">Last name</span>
+                        <input type="text"  name="lastname" id="lastname" value="<%= typeof lastname!= 'undefined' ? lastname : ''%>">
+                    </label>
+                </div>
+
+                <!-- <div class="input-box">
+                    <span class="details">Address</span>
+                    <input type="text" placeholder="Enter your address" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">City</span>
+                    <input type="text" placeholder="Enter your City" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Zipcode</span>
+                    <input type="number" placeholder="Enter your Zipcode" required>
+                </div>
+            </div>
+            <div class="account-type">
+                <input type="radio" name="account" id="dot-1">
+                <input type="radio" name="account" id="dot-2">
+                <span class="account-type">Account-type</span>
+                <div class="category" name="Account">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="Account">Store owner</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="Account">Shopper</span>
+                    </label>
+                </div> -->
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
